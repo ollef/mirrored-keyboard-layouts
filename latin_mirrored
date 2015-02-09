@@ -2,6 +2,7 @@
 
 default  partial
 xkb_symbols "basic" {
+    include "mirrored(basic)"
 
     key <AE10>	{ [         1,     exclam,  onesuperior,   exclamdown ]	};
     key <AE09>	{ [         2,         at,  twosuperior,    oneeighth ]	};

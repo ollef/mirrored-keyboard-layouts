@@ -10,7 +10,7 @@ xkb_symbols "basic" {
 
     include "latin_mirrored"
 
-    name[Group1]="English (UK) (mirrored)";
+    name[Group1]="English (UK)";
 
     key <AE09>	{ [         2,   quotedbl,  twosuperior,    oneeighth ]	};
     key <AE08>	{ [         3,   sterling, threesuperior,    sterling ]	};
@@ -22,16 +22,10 @@ xkb_symbols "basic" {
     key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
     key <LSGT>	{ [ backslash,        bar,          bar,    brokenbar ]	};
 
-    key <CAPS>	{ [ Return ] };
-    key <TAB>	{ [ BackSpace ] };
-
-    key <AC11>	{ [ Escape ] };
-    key <AD11>	{ [ Tab ] };
-
     include "level3(ralt_switch_multikey)"
 };
 
-partial alphanumeric_keys 
+partial alphanumeric_keys
 xkb_symbols "intl" { 
 
     // Describes the differences between a very simple en_US 
@@ -47,7 +41,7 @@ xkb_symbols "intl" {
 
     include "latin_mirrored" 
 
-    name[Group1]="English (UK, international with dead keys) (mirrored)"; 
+    name[Group1]="English (UK, international with dead keys)";
 
     key <AE09>  { [   2,  dead_diaeresis,      twosuperior,     onehalf ] };
     key <AE08>  { [   3,        sterling,    threesuperior,    onethird ] };
@@ -63,7 +57,7 @@ xkb_symbols "intl" {
     include "level3(ralt_switch)"
 };
 
-partial alphanumeric_keys 
+partial alphanumeric_keys
 xkb_symbols "extd" {
     // Clone of the Microsoft "English (UK, Extended" layout, which
     // includes dead keys for: grave; diaeresis; circumflex; tilde; and
@@ -78,10 +72,10 @@ xkb_symbols "extd" {
 
     include "latin_mirrored"
 
-    name[Group1]="English (UK, extended WinKeys) (mirrored)";
-    
+    name[Group1]="English (UK, extended WinKeys)";
+
     key <AE11> { [ dead_grave,    notsign,       brokenbar,    NoSymbol ] };
-    
+
     key <AE09> { [     2,        quotedbl,  dead_diaeresis,     onehalf ] };
     key <AE08> { [     3,        sterling,   threesuperior,    onethird ] };
     key <AE07> { [     4,          dollar,        EuroSign,  onequarter ] };
@@ -110,7 +104,7 @@ xkb_symbols "extd" {
 
 partial alphanumeric_keys
 xkb_symbols "colemak" {
-    include "us(colemak)"
+    include "us_mirrored(colemak)"
 
     name[Group1]="English (UK, Colemak)";
 
@@ -133,7 +127,7 @@ xkb_symbols "colemak" {
 
 partial alphanumeric_keys
 xkb_symbols "dvorak" {
-    include "us(dvorak-alt-intl)"
+    include "us_mirrored(dvorak-alt-intl)"
 
     name[Group1]="English (UK, Dvorak)";
 
@@ -161,7 +155,7 @@ xkb_symbols "dvorakukp" {
 };
 
 // Copied from macintosh_vndr/gb
-partial alphanumeric_keys 
+partial alphanumeric_keys
 xkb_symbols "mac" {
 
     // Describes the differences between a very simple en_US
@@ -169,7 +163,7 @@ xkb_symbols "mac" {
 
     include "latin_mirrored"
 
-    name[Group1]= "English (UK, Macintosh) (mirrored)";
+    name[Group1]= "English (UK, Macintosh)";
 
     key <AE09> {	[               2,              at,         EuroSign	]	};
     key <AE08> {	[               3,        sterling,       numbersign	]	};
@@ -181,12 +175,12 @@ xkb_symbols "mac" {
 };
 
 
-partial alphanumeric_keys 
+partial alphanumeric_keys
 xkb_symbols "mac_intl" { 
 
     include "latin_mirrored" 
 
-    name[Group1]="English (UK, Macintosh international) (mirrored)"; 
+    name[Group1]="English (UK, Macintosh international)";
 
     key <AE09>  { [   2,                       at,           EuroSign,    onehalf ] };
     key <AE08>  { [   3,                 sterling,        twosuperior,   onethird ] };

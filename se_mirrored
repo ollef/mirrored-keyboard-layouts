@@ -9,7 +9,7 @@ xkb_symbols "basic" {
 partial alphanumeric_keys
 xkb_symbols "se" {
 
-    name[Group1]="Swedish (mirrored)";
+    name[Group1]="Swedish";
 
     key <AE06>	{ [         5,    percent,     EuroSign,         cent ]	};
     key <TLDE>	{ [      plus,   question,    backslash, questiondown ]	};
@@ -39,18 +39,18 @@ xkb_symbols "nodeadkeys" {
     include "latin_mirrored(type2_nodeadkeys)"
     include "se_mirrored(se)"
 
-    name[Group1]="Swedish (eliminate dead keys) (mirrored)";
+    name[Group1]="Swedish (eliminate dead keys)";
 
     key <AE12>	{ [     acute,      grave,    plusminus,      notsign ]	};
 };
 
 // Swedish Dvorak
-partial alphanumeric_keys 
+partial alphanumeric_keys
 xkb_symbols "dvorak" {
 
-    name[Group1]="Swedish (Dvorak) (mirrored)";
-
     include "se_mirrored(basic)"
+
+    name[Group1]="Swedish (Dvorak)";
 
     key <AD10> { [     aring,      Aring,    backslash		     ]	};
     key <AD09> { [  adiaeresis,	Adiaeresis,  braceleft,  bracketleft ]	};
@@ -162,14 +162,14 @@ xkb_symbols "smi" {
 };
 
 // Copied from macintosh_vndr/se
-partial alphanumeric_keys 
+partial alphanumeric_keys
 xkb_symbols "mac" {
 
     // Describes the differences between a very simple en_US
     // keyboard and a very simple Swedish(Sweden) keyboard.
 
     include "latin_mirrored"
-    name[Group1]= "Swedish (Macintosh) (mirrored)";
+    name[Group1]= "Swedish (Macintosh)";
 
     key <AE11> {	[         section,         degree	]	};
     key <AE10> {	[               1,          exclam,        copyright,      exclamdown	]	};
@@ -202,9 +202,9 @@ xkb_symbols "mac" {
 partial alphanumeric_keys
 xkb_symbols "svdvorak" {
 
-   name[Group1]="Swedish (Svdvorak) (mirrored)";
-
    include "se_mirrored(basic)"
+
+   name[Group1]="Swedish (Svdvorak)";
 
    key <AD10> { [ aring, Aring, braceleft ] };
    key <AD09> { [ comma, semicolon, bracketleft ] };
@@ -260,7 +260,7 @@ xkb_symbols "swl" {
 
   include "se_mirrored(basic)"
 
-  name[Group1]="Swedish Sign Language (mirrored)";
+  name[Group1]="Swedish Sign Language";
 
   key <AB10> { [ 0x110c925, 0x110c95f, 0x110c940, 0x110c99a ] };
   key <AB09> { [ 0x110c96b, 0x110c933, 0x110c920, 0x110c98e ] };
@@ -309,3 +309,54 @@ partial alphanumeric_keys
 	xkb_symbols "sun_type6" {
 	include "sun_vndr/se(sun_type6)"
 };
+
+partial alphanumeric_keys
+xkb_symbols "dvorak_a5" {
+
+	include "se_mirrored(basic)"
+
+	name[Group1]="Swedish (Dvorak A5)";
+
+	key <AE12> { [ dead_acute, dead_grave, plusminus,           none ] };
+
+	key <AD10> { [ aring,      Aring,      braceleft,           none ] };
+	key <AD09> { [ adiaeresis, Adiaeresis, braceright,          none ] };
+	key <AD08> { [ odiaeresis, Odiaeresis, bracketleft,         none ] };
+	key <AD07> { [ p,          P,          bracketright,        none ] };
+	key <AD06> { [ y,          Y,          dollar,              none ] };
+	key <AD05> { [ f,          F,          quotedbl,            none ] };
+	key <AD04> { [ g,          G,          question,            none ] };
+	key <AD03> { [ c,          C,          ampersand,           none ] };
+	key <AD02> { [ r,          R,          less,                none ] };
+	key <AD01> { [ l,          L,          greater,             none ] };
+	key <AD11> { [ comma,      semicolon,  dead_cedilla,        none ] };
+	key <AD12> { [ dead_diaeresis, dead_circumflex, dead_tilde,	asciicircum	]	};
+
+	key <AC10> { [ a,          A,          semicolon,           none ] };
+	key <AC09> { [ o,          O,          slash,               none ] };
+	key <AC08> { [ e,          E,          parenleft,           none ] };
+	key <AC07> { [ u,          U,          parenright,          none ] };
+	key <AC06> { [ i,          I,          bar,                 none ] };
+	key <AC05> { [ d,          D,          numbersign,          none ] };
+	key <AC04> { [ h,          H,          asciicircum,         none ] };
+	key <AC03> { [ t,          T,          numbersign,          none ] };
+	key <AC02> { [ n,          N,          quotedbl,            none ] };
+	key <AC01> { [ s,          S,          asciitilde,          none ] };
+	key <AC11> { [ minus,      underscore, grave,               none ] };
+
+	key <AB10> { [ period,     colon,      colon,               none ] };
+	key <AB09> { [ q,          Q,          equal,               none ] };
+	key <AB08> { [ j,          J,          at,                  none ] };
+	key <AB07> { [ k,          K,          exclam,              none ] };
+	key <AB06> { [ x,          X,          backslash,           none ] };
+	key <AB05> { [ b,          B,          percent,             none ] };
+	key <AB04> { [ m,          M,          grave,               none ] };
+	key <AB03> { [ w,          W,          lstroke,             none ] };
+	key <AB02> { [ v,          V,          leftdoublequotemark, none ] };
+	key <AB01> { [ z,          Z,          guillemotleft,       none ] };
+
+	key <BKSL> { [ apostrophe, asterisk,   asterisk,            none ] };
+
+};
+
+

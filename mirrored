@@ -1,0 +1,12 @@
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+
+    name[Group1]= "Extra Mirrored Keys";
+
+    key <CAPS>	{ [ Return ] };
+    key <TAB>	{ [ BackSpace ] };
+
+    key <AC11>	{ [ Escape ] };
+    key <AD11>	{ [ Tab ] };
+};
+
