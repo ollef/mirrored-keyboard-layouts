@@ -14,6 +14,6 @@ and vice versa.
 
 Here's how the qwerty `us_mirrored` layout looks:
 
-[us_mirrored](https://raw.github.com/ollef/mirrored-keyboard-layouts/master/us_mirrored.png)
+![us_mirrored](https://raw.github.com/ollef/mirrored-keyboard-layouts/master/us_mirrored.png)
 
 Enjoy!
